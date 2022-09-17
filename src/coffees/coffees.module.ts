@@ -27,7 +27,7 @@ class ProductionConfigService {}
     },
     {
       provide: COFFEE_BRANDS, // 👈
-      useValue: ['buddy brew', 'nescafe']
+      useFactory: () => ['buddy brew', 'nescafe']
     },
   ],
   exports: [CoffeesService],
